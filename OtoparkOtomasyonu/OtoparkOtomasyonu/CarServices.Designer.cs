@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_HomeNav = new System.Windows.Forms.Panel();
             this.lbl_HomeUN = new System.Windows.Forms.Label();
@@ -96,10 +95,6 @@
             this.txt_CikisGirisTarihi = new System.Windows.Forms.TextBox();
             this.txt_CikisPlakaNo = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.lbl_HomeSystemTime = new System.Windows.Forms.Label();
-            this.timer_SystemTime = new System.Windows.Forms.Timer(this.components);
-            this.pbGiris = new System.Windows.Forms.PictureBox();
-            this.pBCikis = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -118,8 +113,6 @@
             this.panel17.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGiris)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBCikis)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -322,11 +315,11 @@
             this.groupBox2.Controls.Add(this.txt_PlakaNo);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(185, 137);
+            this.groupBox2.Location = new System.Drawing.Point(176, 129);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(326, 327);
+            this.groupBox2.Size = new System.Drawing.Size(326, 447);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Araç Giriş Ekranı";
@@ -348,7 +341,7 @@
             // 
             this.cBox_ParkNu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cBox_ParkNu.FormattingEnabled = true;
-            this.cBox_ParkNu.Location = new System.Drawing.Point(114, 169);
+            this.cBox_ParkNu.Location = new System.Drawing.Point(130, 168);
             this.cBox_ParkNu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBox_ParkNu.Name = "cBox_ParkNu";
             this.cBox_ParkNu.Size = new System.Drawing.Size(178, 23);
@@ -390,10 +383,10 @@
             this.btn_GirisKayit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_GirisKayit.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_GirisKayit.ForeColor = System.Drawing.Color.White;
-            this.btn_GirisKayit.Location = new System.Drawing.Point(58, 249);
+            this.btn_GirisKayit.Location = new System.Drawing.Point(102, 388);
             this.btn_GirisKayit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_GirisKayit.Name = "btn_GirisKayit";
-            this.btn_GirisKayit.Size = new System.Drawing.Size(206, 27);
+            this.btn_GirisKayit.Size = new System.Drawing.Size(206, 34);
             this.btn_GirisKayit.TabIndex = 19;
             this.btn_GirisKayit.Text = "Kayıt Et";
             this.btn_GirisKayit.UseVisualStyleBackColor = false;
@@ -402,17 +395,30 @@
             // 
             this.cBox_KatNu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cBox_KatNu.FormattingEnabled = true;
-            this.cBox_KatNu.Location = new System.Drawing.Point(114, 124);
+            this.cBox_KatNu.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.cBox_KatNu.Location = new System.Drawing.Point(130, 124);
             this.cBox_KatNu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBox_KatNu.Name = "cBox_KatNu";
             this.cBox_KatNu.Size = new System.Drawing.Size(178, 23);
             this.cBox_KatNu.TabIndex = 18;
+            this.cBox_KatNu.SelectedIndexChanged += new System.EventHandler(this.cBox_KatNu_SelectedIndexChanged);
             // 
             // cBox_AracTur
             // 
             this.cBox_AracTur.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cBox_AracTur.FormattingEnabled = true;
-            this.cBox_AracTur.Location = new System.Drawing.Point(114, 214);
+            this.cBox_AracTur.Items.AddRange(new object[] {
+            "Binek",
+            "Motorsiklet",
+            "Kamyon",
+            "Midibüs",
+            "Minibüs"});
+            this.cBox_AracTur.Location = new System.Drawing.Point(130, 214);
             this.cBox_AracTur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBox_AracTur.Name = "cBox_AracTur";
             this.cBox_AracTur.Size = new System.Drawing.Size(178, 23);
@@ -530,7 +536,7 @@
             this.txt_GirisTarihi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_GirisTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_GirisTarihi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.txt_GirisTarihi.Location = new System.Drawing.Point(114, 79);
+            this.txt_GirisTarihi.Location = new System.Drawing.Point(130, 80);
             this.txt_GirisTarihi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_GirisTarihi.Multiline = true;
             this.txt_GirisTarihi.Name = "txt_GirisTarihi";
@@ -542,7 +548,7 @@
             this.txt_PlakaNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_PlakaNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_PlakaNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(247)))));
-            this.txt_PlakaNo.Location = new System.Drawing.Point(114, 34);
+            this.txt_PlakaNo.Location = new System.Drawing.Point(130, 37);
             this.txt_PlakaNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_PlakaNo.Multiline = true;
             this.txt_PlakaNo.Name = "txt_PlakaNo";
@@ -585,7 +591,7 @@
             this.groupBox3.Controls.Add(this.txt_CikisPlakaNo);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(655, 125);
+            this.groupBox3.Location = new System.Drawing.Point(176, 125);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -600,7 +606,7 @@
             this.lbl_CikisHata.AutoSize = true;
             this.lbl_CikisHata.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_CikisHata.ForeColor = System.Drawing.Color.Red;
-            this.lbl_CikisHata.Location = new System.Drawing.Point(5, 379);
+            this.lbl_CikisHata.Location = new System.Drawing.Point(9, 343);
             this.lbl_CikisHata.Name = "lbl_CikisHata";
             this.lbl_CikisHata.Size = new System.Drawing.Size(55, 12);
             this.lbl_CikisHata.TabIndex = 47;
@@ -659,7 +665,7 @@
             this.txt_ToplamTutar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_ToplamTutar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_ToplamTutar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.txt_ToplamTutar.Location = new System.Drawing.Point(114, 304);
+            this.txt_ToplamTutar.Location = new System.Drawing.Point(142, 305);
             this.txt_ToplamTutar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_ToplamTutar.Multiline = true;
             this.txt_ToplamTutar.Name = "txt_ToplamTutar";
@@ -681,7 +687,7 @@
             this.txt_CikisTarihi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_CikisTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_CikisTarihi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.txt_CikisTarihi.Location = new System.Drawing.Point(114, 124);
+            this.txt_CikisTarihi.Location = new System.Drawing.Point(142, 125);
             this.txt_CikisTarihi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_CikisTarihi.Multiline = true;
             this.txt_CikisTarihi.Name = "txt_CikisTarihi";
@@ -696,10 +702,10 @@
             this.btn_CikisYap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CikisYap.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_CikisYap.ForeColor = System.Drawing.Color.White;
-            this.btn_CikisYap.Location = new System.Drawing.Point(59, 343);
+            this.btn_CikisYap.Location = new System.Drawing.Point(114, 392);
             this.btn_CikisYap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_CikisYap.Name = "btn_CikisYap";
-            this.btn_CikisYap.Size = new System.Drawing.Size(206, 27);
+            this.btn_CikisYap.Size = new System.Drawing.Size(206, 34);
             this.btn_CikisYap.TabIndex = 40;
             this.btn_CikisYap.Text = "Çıkış Yap";
             this.btn_CikisYap.UseVisualStyleBackColor = false;
@@ -708,7 +714,7 @@
             // 
             this.cBox_CikisAracTur.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cBox_CikisAracTur.FormattingEnabled = true;
-            this.cBox_CikisAracTur.Location = new System.Drawing.Point(114, 259);
+            this.cBox_CikisAracTur.Location = new System.Drawing.Point(142, 260);
             this.cBox_CikisAracTur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBox_CikisAracTur.Name = "cBox_CikisAracTur";
             this.cBox_CikisAracTur.Size = new System.Drawing.Size(178, 23);
@@ -747,7 +753,7 @@
             // 
             this.cBox_CikisParkNu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cBox_CikisParkNu.FormattingEnabled = true;
-            this.cBox_CikisParkNu.Location = new System.Drawing.Point(114, 214);
+            this.cBox_CikisParkNu.Location = new System.Drawing.Point(142, 215);
             this.cBox_CikisParkNu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBox_CikisParkNu.Name = "cBox_CikisParkNu";
             this.cBox_CikisParkNu.Size = new System.Drawing.Size(178, 23);
@@ -786,11 +792,12 @@
             // 
             this.cBox_CikisKatNo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cBox_CikisKatNo.FormattingEnabled = true;
-            this.cBox_CikisKatNo.Location = new System.Drawing.Point(114, 169);
+            this.cBox_CikisKatNo.Location = new System.Drawing.Point(142, 170);
             this.cBox_CikisKatNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBox_CikisKatNo.Name = "cBox_CikisKatNo";
             this.cBox_CikisKatNo.Size = new System.Drawing.Size(178, 23);
             this.cBox_CikisKatNo.TabIndex = 33;
+            this.cBox_CikisKatNo.SelectedIndexChanged += new System.EventHandler(this.cBox_CikisKatNo_SelectedIndexChanged);
             // 
             // panel17
             // 
@@ -875,7 +882,7 @@
             this.txt_CikisGirisTarihi.Enabled = false;
             this.txt_CikisGirisTarihi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_CikisGirisTarihi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.txt_CikisGirisTarihi.Location = new System.Drawing.Point(114, 79);
+            this.txt_CikisGirisTarihi.Location = new System.Drawing.Point(142, 80);
             this.txt_CikisGirisTarihi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_CikisGirisTarihi.Multiline = true;
             this.txt_CikisGirisTarihi.Name = "txt_CikisGirisTarihi";
@@ -887,7 +894,7 @@
             // 
             this.txt_CikisPlakaNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_CikisPlakaNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(247)))));
-            this.txt_CikisPlakaNo.Location = new System.Drawing.Point(114, 34);
+            this.txt_CikisPlakaNo.Location = new System.Drawing.Point(142, 36);
             this.txt_CikisPlakaNo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_CikisPlakaNo.Multiline = true;
             this.txt_CikisPlakaNo.Name = "txt_CikisPlakaNo";
@@ -904,55 +911,12 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "Plaka No";
             // 
-            // lbl_HomeSystemTime
-            // 
-            this.lbl_HomeSystemTime.AutoSize = true;
-            this.lbl_HomeSystemTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_HomeSystemTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(178)))));
-            this.lbl_HomeSystemTime.Location = new System.Drawing.Point(770, 37);
-            this.lbl_HomeSystemTime.Name = "lbl_HomeSystemTime";
-            this.lbl_HomeSystemTime.Size = new System.Drawing.Size(191, 36);
-            this.lbl_HomeSystemTime.TabIndex = 13;
-            this.lbl_HomeSystemTime.Text = "Sistem Saati";
-            // 
-            // timer_SystemTime
-            // 
-            this.timer_SystemTime.Interval = 1000;
-            this.timer_SystemTime.Tick += new System.EventHandler(this.timer_SystemTime_Tick);
-            // 
-            // pbGiris
-            // 
-            this.pbGiris.Image = global::OtoparkOtomasyonu.Properties.Resources.logo;
-            this.pbGiris.Location = new System.Drawing.Point(663, 137);
-            this.pbGiris.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbGiris.Name = "pbGiris";
-            this.pbGiris.Size = new System.Drawing.Size(326, 264);
-            this.pbGiris.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbGiris.TabIndex = 14;
-            this.pbGiris.TabStop = false;
-            this.pbGiris.Visible = false;
-            // 
-            // pBCikis
-            // 
-            this.pBCikis.Image = global::OtoparkOtomasyonu.Properties.Resources.logo;
-            this.pBCikis.Location = new System.Drawing.Point(196, 140);
-            this.pBCikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pBCikis.Name = "pBCikis";
-            this.pBCikis.Size = new System.Drawing.Size(342, 262);
-            this.pBCikis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBCikis.TabIndex = 15;
-            this.pBCikis.TabStop = false;
-            this.pBCikis.Visible = false;
-            // 
             // CarServices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1076, 585);
-            this.Controls.Add(this.pBCikis);
-            this.Controls.Add(this.pbGiris);
-            this.Controls.Add(this.lbl_HomeSystemTime);
+            this.ClientSize = new System.Drawing.Size(551, 585);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -987,8 +951,6 @@
             this.panel17.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbGiris)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBCikis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1010,10 +972,6 @@
         private RadioButton rB_Giris;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
-        private Label lbl_HomeSystemTime;
-        private System.Windows.Forms.Timer timer_SystemTime;
-        private PictureBox pbGiris;
-        private PictureBox pBCikis;
         private Label label2;
         private TextBox txt_PlakaNo;
         private TextBox txt_GirisTarihi;

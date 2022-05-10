@@ -471,7 +471,7 @@
             // 
             this.currentCarLabel.AutoSize = true;
             this.currentCarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.currentCarLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
+            this.currentCarLabel.ForeColor = System.Drawing.Color.Gold;
             this.currentCarLabel.Location = new System.Drawing.Point(3, 40);
             this.currentCarLabel.Name = "currentCarLabel";
             this.currentCarLabel.Size = new System.Drawing.Size(136, 32);
