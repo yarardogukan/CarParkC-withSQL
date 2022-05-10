@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y7VWQHmTxKDEKIywHqeMrxHk6sYKk3XXgML5WWy8LyYaDidzw2MoBOOuCMh4aGtf6JUK42KbXSU3lmldOBDT5A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\devme\\.nuget\\packages\\circularprogressbar_net5\\3.0.0\\circularprogressbar_net5.3.0.0.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\scottplot\\4.1.45\\scottplot.4.1.45.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\scottplot.winforms\\4.1.45\\scottplot.winforms.4.1.45.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\system.drawing.common\\4.6.1\\system.drawing.common.4.6.1.nupkg.sha512",
+    "C:\\Users\\devme\\.nuget\\packages\\winformanimation-net5\\2.0.0\\winformanimation-net5.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
