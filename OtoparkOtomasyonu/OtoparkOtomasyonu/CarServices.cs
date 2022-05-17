@@ -27,7 +27,7 @@ namespace OtoparkOtomasyonu
             );
 
         public String? katno;
-
+        public int? girisCikis;
         public CarServices()
         {
             InitializeComponent();
@@ -77,12 +77,119 @@ namespace OtoparkOtomasyonu
                         cBox_KatNu.SelectedIndex = 0;
                         cBox_ParkNu.SelectedIndex = 0;
                         break;
+                    case "A2":
+                        cBox_KatNu.SelectedIndex = 0;
+                        cBox_ParkNu.SelectedIndex = 1;
+                        break;
+                    case "A3":
+                        cBox_KatNu.SelectedIndex = 0;
+                        cBox_ParkNu.SelectedIndex = 2;
+                        break;
+                    case "A4":
+                        cBox_KatNu.SelectedIndex = 0;
+                        cBox_ParkNu.SelectedIndex = 3;
+                        break;
+                    case "A5":
+                        cBox_KatNu.SelectedIndex = 0;
+                        cBox_ParkNu.SelectedIndex = 4;
+                        break;
+                    case "B1":
+                        cBox_KatNu.SelectedIndex = 1;
+                        cBox_ParkNu.SelectedIndex = 0;
+                        break;
+                    case "B2":
+                        cBox_KatNu.SelectedIndex = 1;
+                        cBox_ParkNu.SelectedIndex = 1;
+                        break;
+                    case "B3":
+                        cBox_KatNu.SelectedIndex = 1;
+                        cBox_ParkNu.SelectedIndex = 2;
+                        break;
+                    case "B4":
+                        cBox_KatNu.SelectedIndex = 1;
+                        cBox_ParkNu.SelectedIndex = 3;
+                        break;
+                    case "B5":
+                        cBox_KatNu.SelectedIndex = 1;
+                        cBox_ParkNu.SelectedIndex = 4;
+                        break;
+                    case "C1":
+                        cBox_KatNu.SelectedIndex = 2;
+                        cBox_ParkNu.SelectedIndex = 0;
+                        break;
+                    case "C2":
+                        cBox_KatNu.SelectedIndex = 2;
+                        cBox_ParkNu.SelectedIndex = 1;
+                        break;
+                    case "C3":
+                        cBox_KatNu.SelectedIndex = 2;
+                        cBox_ParkNu.SelectedIndex = 2;
+                        break;
+                    case "C4":
+                        cBox_KatNu.SelectedIndex = 2;
+                        cBox_ParkNu.SelectedIndex = 3;
+                        break;
+                    case "C5":
+                        cBox_KatNu.SelectedIndex = 2;
+                        cBox_ParkNu.SelectedIndex = 4;
+                        break;
+                    case "D1":
+                        cBox_KatNu.SelectedIndex = 3;
+                        cBox_ParkNu.SelectedIndex = 0;
+                        break;
+                    case "D2":
+                        cBox_KatNu.SelectedIndex = 3;
+                        cBox_ParkNu.SelectedIndex = 1;
+                        break;
+                    case "D3":
+                        cBox_KatNu.SelectedIndex = 3;
+                        cBox_ParkNu.SelectedIndex = 2;
+                        break;
+                    case "D4":
+                        cBox_KatNu.SelectedIndex = 3;
+                        cBox_ParkNu.SelectedIndex = 3;
+                        break;
+                    case "D5":
+                        cBox_KatNu.SelectedIndex = 3;
+                        cBox_ParkNu.SelectedIndex = 4;
+                        break;
+                    case "V1":
+                        cBox_KatNu.SelectedIndex = 4;
+                        cBox_ParkNu.SelectedIndex = 0;
+                        break;
+                    case "V2":
+                        cBox_KatNu.SelectedIndex = 4;
+                        cBox_ParkNu.SelectedIndex = 1;
+                        break;
+                    case "V3":
+                        cBox_KatNu.SelectedIndex = 4;
+                        cBox_ParkNu.SelectedIndex = 2;
+                        break;
+                    case "V4":
+                        cBox_KatNu.SelectedIndex = 4;
+                        cBox_ParkNu.SelectedIndex = 3;
+                        break;
+                    case "V5":
+                        cBox_KatNu.SelectedIndex = 4;
+                        cBox_ParkNu.SelectedIndex = 4;
+                        break;
                     default:
                         break;
                 }
             }
 
-            rB_Giris.Select();
+            if ((girisCikis ?? 0) == 1)
+            {
+                rB_Giris.Select();
+            }
+            else
+            {
+                rB_Cikis.Select();
+            }
+
+           
+
+
   
         }
 
@@ -130,37 +237,51 @@ namespace OtoparkOtomasyonu
 
         private void btn_CikisYap_Click(object sender, EventArgs e)
         {
-            
+            SQLProcess process = new SQLProcess();
+            List<Object> selectedObject = process.selectQuery("select * from tbl_Kat where kat_ID =" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex).ToString()) ?? new List<Object>();
+            if (selectedObject.Count == 0)
+            {
+                MessageBox.Show("Veri tabanından veri Çekilirken bir hata meydana geldi.");
+            }else
+            {
+                List<Object> firstObject = (List<object>)(selectedObject[0] ?? new List<Object>());
+
+                Boolean placeIsEmpty = (Boolean?)firstObject[3] ?? false;
+                if (placeIsEmpty)
+                {
+                    MessageBox.Show("Bu park alanı zaten boş!");
+                }
+                else
+                {
+                    process.executeQuery("update tbl_Kat set parkDurumu='True' where kat_ID='" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex) + "'");
+                    process.executeQuery("update tbl_Fatura set "); // çıkış tarihini ve fiyatı set etmek gerekli.
+                }
+            }
         }
 
         private void btn_GirisKayit_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-NLRIGP6;Initial Catalog=otoparkVeritabani;Integrated Security=True");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("select * from tbl_Kat where kat_ID =" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex), con);
-            cmd.ExecuteNonQuery();
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {   
-                if (reader.GetBoolean(3))
+            SQLProcess process = new SQLProcess();
+            List<Object> selectedObject = process.selectQuery("select * from tbl_Kat where kat_ID =" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex).ToString()) ?? new List<Object>();
+            if (selectedObject.Count == 0)
+            {
+                MessageBox.Show("Veri tabanından veri Çekilirken bir hata meydana geldi.");
+            }
+            else
+            {
+                List<Object> firstObject = (List<object>) (selectedObject[0] ?? new List<Object>());
+
+                Boolean placeIsEmpty = (Boolean?) firstObject[3] ?? false;
+                if (placeIsEmpty)
                 {
-                    try
-                    {
-                        sqlProcess();
-                        MessageBox.Show("data saved");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.ToString());
-                    }
+                    process.executeQuery("insert into tbl_Fatura values ('" + txt_PlakaNo.Text + "', '" + txt_GirisTarihi.Text + "','NULL', '" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex) + "', '" + (cBox_AracTur.SelectedIndex + 1) + "', 'NULL')");
+                    process.executeQuery("update tbl_Kat set parkDurumu='False' where kat_ID='" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex) + "'");
                 }
                 else
                 {
-                    MessageBox.Show("Yer Dolu");
+                    MessageBox.Show("Yer Dolu!");
                 }
             }
-
-            con.Close();
         }              
                        
         private int katIdHesapla(int katNoIndex, int parkNoIndex)
@@ -169,20 +290,6 @@ namespace OtoparkOtomasyonu
             int parkHesapIndex = parkNoIndex + 1;
 
             return katHesapIndex * parkHesapIndex;
-        }
-
-        private void sqlProcess()
-        {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-NLRIGP6;Initial Catalog=otoparkVeritabani;Integrated Security=True");
-            SqlCommand cmd2 = new SqlCommand("insert into tbl_Fatura values ('" + txt_PlakaNo.Text + "', '" + txt_GirisTarihi.Text + "','NULL', '" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex) + "', '" + (cBox_AracTur.SelectedIndex + 1) + "', 'NULL')");
-            cmd2.Connection = con;
-            con.Open();
-            con.Close();
-            SqlCommand cmd3 = new SqlCommand("update tbl_Kat set parkDurumu='False' where kat_ID='" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex) + "'");
-            cmd3.Connection = con;
-            con.Open();
-            con.Close();
-            
         }
     }
 }

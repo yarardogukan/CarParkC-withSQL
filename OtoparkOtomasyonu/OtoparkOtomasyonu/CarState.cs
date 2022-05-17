@@ -93,12 +93,40 @@ namespace OtoparkOtomasyonu
             buttons.Add(btn_V3);
             buttons.Add(btn_V4);
             buttons.Add(btn_V5);
-            
 
-            foreach (Button button in buttons) { 
-                button.Text = "Boş";
-                button.BackColor = Color.Green;
-                button.ForeColor = Color.White;
+            SQLProcess process = new SQLProcess();
+            List<Object> selectedObject = process.selectQuery("select * from tbl_Kat") ?? new List<Object>();
+            if (selectedObject.Count == 0)
+            {
+                MessageBox.Show("Veri tabanından veri Çekilirken bir hata meydana geldi.");
+            }
+            else
+            {
+                 
+               
+
+
+                for (int i = 0; i < buttons.Count; i++)
+                {
+                    Button button = buttons[i];
+                    
+                    List<Object> floor = (List<object>)(selectedObject[i] ?? new List<Object>());
+                    Boolean placeIsEmpty = (Boolean?)floor[3] ?? false;
+                    if (placeIsEmpty)
+                    {
+                        button.Text = "Boş";
+                        button.BackColor = Color.Green;
+                        button.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        String placePlaka = (String?)floor[2] ?? ""; //plaka hangi indeksteyse değişecek
+                        button.Text = placePlaka;
+                        button.BackColor = Color.Red;
+                        button.ForeColor = Color.White;
+                    }
+                    
+                }
             }
         }
 
@@ -107,14 +135,14 @@ namespace OtoparkOtomasyonu
             var clickedButton = sender as Button;
             MessageBox.Show(clickedButton.Name);
             String buttonSqlName = clickedButton.Name.Replace("btn_", "");
+            int placeIsEmpty = clickedButton.BackColor == Color.Red ? 0 : 1;
             if (clickedButton != null)
             {
                 CarServices carServices = new CarServices();
                 carServices.katno = buttonSqlName;
+                carServices.girisCikis = placeIsEmpty;
                 this.Hide();
                 carServices.Show();
-                clickedButton.Text = "34 AAA 34";
-                clickedButton.BackColor = Color.Red;
             }
         }
 
