@@ -68,54 +68,55 @@ namespace OtoparkOtomasyonu
         private void CarState_Load(object sender, EventArgs e)
         {
             List<Button> buttons = new List<Button>();
-            buttons.Add(button1);
-            buttons.Add(button2);
-            buttons.Add(button3);
-            buttons.Add(button4);
-            buttons.Add(button5);
-            buttons.Add(button6);
-            buttons.Add(button7);
-            buttons.Add(button8);
-            buttons.Add(button9);
-            buttons.Add(button10);
-            buttons.Add(button11);
-            buttons.Add(button12);
-            buttons.Add(button13);
-            buttons.Add(button14);
-            buttons.Add(button15);
-            buttons.Add(button16);  
-            buttons.Add(button17);
-            buttons.Add(button18);
-            buttons.Add(button19);
-            buttons.Add(button20);
-            buttons.Add(button21);
-            buttons.Add(button22);
-            buttons.Add(button23);
-            buttons.Add(button24);
-            buttons.Add(button25);
+            buttons.Add(btn_A1);
+            buttons.Add(btn_A2);
+            buttons.Add(btn_A3);
+            buttons.Add(btn_A4);
+            buttons.Add(btn_A5);
+            buttons.Add(btn_B1);
+            buttons.Add(btn_B2);
+            buttons.Add(btn_B3);
+            buttons.Add(btn_B4);
+            buttons.Add(btn_B5);
+            buttons.Add(btn_C1);
+            buttons.Add(btn_C2);
+            buttons.Add(btn_C3);
+            buttons.Add(btn_C4);
+            buttons.Add(btn_C5);
+            buttons.Add(btn_D1);
+            buttons.Add(btn_D2);
+            buttons.Add(btn_D3);
+            buttons.Add(btn_D4);
+            buttons.Add(btn_D5);
+            buttons.Add(btn_V1);
+            buttons.Add(btn_V2);
+            buttons.Add(btn_V3);
+            buttons.Add(btn_V4);
+            buttons.Add(btn_V5);
+            
 
             foreach (Button button in buttons) { 
                 button.Text = "Boş";
                 button.BackColor = Color.Green;
                 button.ForeColor = Color.White;
-
-                if (button == button10)
-                {
-                    button.Text = "34 AAA 34";
-                    button.BackColor = Color.Red;
-                    button.ForeColor = Color.White;
-                }
             }
         }
 
         private void parkClick(object sender, EventArgs e)
         {
             var clickedButton = sender as Button;
+            MessageBox.Show(clickedButton.Name);
+            String buttonSqlName = clickedButton.Name.Replace("btn_", "");
             if (clickedButton != null)
             {
+                CarServices carServices = new CarServices();
+                carServices.katno = buttonSqlName;
+                this.Hide();
+                carServices.Show();
                 clickedButton.Text = "34 AAA 34";
                 clickedButton.BackColor = Color.Red;
             }
         }
+
     }
 }

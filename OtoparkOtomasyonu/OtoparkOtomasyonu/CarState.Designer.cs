@@ -39,43 +39,68 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gBox_Kat1 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.gBox_Kat2 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.gBox_Kat3 = new System.Windows.Forms.GroupBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.gBox_Kat4 = new System.Windows.Forms.GroupBox();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.gBox_VIP = new System.Windows.Forms.GroupBox();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_A5 = new System.Windows.Forms.Button();
+            this.btn_A4 = new System.Windows.Forms.Button();
+            this.btn_A3 = new System.Windows.Forms.Button();
+            this.btn_A2 = new System.Windows.Forms.Button();
+            this.btn_A1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btn_B5 = new System.Windows.Forms.Button();
+            this.btn_B4 = new System.Windows.Forms.Button();
+            this.btn_B3 = new System.Windows.Forms.Button();
+            this.btn_B2 = new System.Windows.Forms.Button();
+            this.btn_B1 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.btn_C5 = new System.Windows.Forms.Button();
+            this.btn_C4 = new System.Windows.Forms.Button();
+            this.btn_C3 = new System.Windows.Forms.Button();
+            this.btn_C2 = new System.Windows.Forms.Button();
+            this.btn_C1 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.btn_D5 = new System.Windows.Forms.Button();
+            this.btn_D4 = new System.Windows.Forms.Button();
+            this.btn_D3 = new System.Windows.Forms.Button();
+            this.btn_D2 = new System.Windows.Forms.Button();
+            this.btn_D1 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.btn_V5 = new System.Windows.Forms.Button();
+            this.btn_V4 = new System.Windows.Forms.Button();
+            this.btn_V3 = new System.Windows.Forms.Button();
+            this.btn_V2 = new System.Windows.Forms.Button();
+            this.btn_V1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gBox_Kat1.SuspendLayout();
-            this.gBox_Kat2.SuspendLayout();
-            this.gBox_Kat3.SuspendLayout();
-            this.gBox_Kat4.SuspendLayout();
-            this.gBox_VIP.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -83,19 +108,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
-            this.label1.Location = new System.Drawing.Point(169, 9);
+            this.label1.Location = new System.Drawing.Point(193, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 32);
+            this.label1.Size = new System.Drawing.Size(243, 39);
             this.label1.TabIndex = 9;
             this.label1.Text = "Kat Durumları";
             // 
             // pnl_HomeNav
             // 
             this.pnl_HomeNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.pnl_HomeNav.Location = new System.Drawing.Point(0, 145);
-            this.pnl_HomeNav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_HomeNav.Location = new System.Drawing.Point(0, 193);
             this.pnl_HomeNav.Name = "pnl_HomeNav";
-            this.pnl_HomeNav.Size = new System.Drawing.Size(3, 75);
+            this.pnl_HomeNav.Size = new System.Drawing.Size(3, 100);
             this.pnl_HomeNav.TabIndex = 8;
             // 
             // lbl_HomeUN
@@ -103,19 +127,18 @@
             this.lbl_HomeUN.AutoSize = true;
             this.lbl_HomeUN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_HomeUN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(156)))), ((int)(((byte)(149)))));
-            this.lbl_HomeUN.Location = new System.Drawing.Point(32, 74);
+            this.lbl_HomeUN.Location = new System.Drawing.Point(37, 99);
             this.lbl_HomeUN.Name = "lbl_HomeUN";
-            this.lbl_HomeUN.Size = new System.Drawing.Size(97, 17);
+            this.lbl_HomeUN.Size = new System.Drawing.Size(114, 20);
             this.lbl_HomeUN.TabIndex = 1;
             this.lbl_HomeUN.Text = "Kullanıcı Adı";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::OtoparkOtomasyonu.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(52, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(59, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 47);
+            this.pictureBox1.Size = new System.Drawing.Size(63, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -128,10 +151,9 @@
             this.btn_HomeCikis.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_HomeCikis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_HomeCikis.Image = global::OtoparkOtomasyonu.Properties.Resources.externalx30;
-            this.btn_HomeCikis.Location = new System.Drawing.Point(0, 393);
-            this.btn_HomeCikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_HomeCikis.Location = new System.Drawing.Point(0, 419);
             this.btn_HomeCikis.Name = "btn_HomeCikis";
-            this.btn_HomeCikis.Size = new System.Drawing.Size(163, 32);
+            this.btn_HomeCikis.Size = new System.Drawing.Size(186, 43);
             this.btn_HomeCikis.TabIndex = 1;
             this.btn_HomeCikis.Text = "Çıkış";
             this.btn_HomeCikis.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -146,10 +168,9 @@
             this.btn_HomeAracIslemler.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_HomeAracIslemler.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_HomeAracIslemler.Image = global::OtoparkOtomasyonu.Properties.Resources.moneybagx30;
-            this.btn_HomeAracIslemler.Location = new System.Drawing.Point(0, 172);
-            this.btn_HomeAracIslemler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_HomeAracIslemler.Location = new System.Drawing.Point(0, 230);
             this.btn_HomeAracIslemler.Name = "btn_HomeAracIslemler";
-            this.btn_HomeAracIslemler.Size = new System.Drawing.Size(163, 32);
+            this.btn_HomeAracIslemler.Size = new System.Drawing.Size(186, 43);
             this.btn_HomeAracIslemler.TabIndex = 1;
             this.btn_HomeAracIslemler.Text = "Araç İşlemleri";
             this.btn_HomeAracIslemler.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -164,10 +185,9 @@
             this.btn_HomeAracDurumu.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_HomeAracDurumu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_HomeAracDurumu.Image = global::OtoparkOtomasyonu.Properties.Resources.aboutx30;
-            this.btn_HomeAracDurumu.Location = new System.Drawing.Point(0, 140);
-            this.btn_HomeAracDurumu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_HomeAracDurumu.Location = new System.Drawing.Point(0, 187);
             this.btn_HomeAracDurumu.Name = "btn_HomeAracDurumu";
-            this.btn_HomeAracDurumu.Size = new System.Drawing.Size(163, 32);
+            this.btn_HomeAracDurumu.Size = new System.Drawing.Size(186, 43);
             this.btn_HomeAracDurumu.TabIndex = 1;
             this.btn_HomeAracDurumu.Text = "Kat Durumları";
             this.btn_HomeAracDurumu.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -182,10 +202,9 @@
             this.btn_HomeDurumRaporu.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_HomeDurumRaporu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_HomeDurumRaporu.Image = global::OtoparkOtomasyonu.Properties.Resources.homex30;
-            this.btn_HomeDurumRaporu.Location = new System.Drawing.Point(0, 108);
-            this.btn_HomeDurumRaporu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_HomeDurumRaporu.Location = new System.Drawing.Point(0, 144);
             this.btn_HomeDurumRaporu.Name = "btn_HomeDurumRaporu";
-            this.btn_HomeDurumRaporu.Size = new System.Drawing.Size(163, 32);
+            this.btn_HomeDurumRaporu.Size = new System.Drawing.Size(186, 43);
             this.btn_HomeDurumRaporu.TabIndex = 1;
             this.btn_HomeDurumRaporu.Text = "Durum Raporu";
             this.btn_HomeDurumRaporu.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -198,9 +217,8 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(163, 108);
+            this.panel2.Size = new System.Drawing.Size(186, 144);
             this.panel2.TabIndex = 0;
             // 
             // panel1
@@ -213,462 +231,700 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(163, 425);
+            this.panel1.Size = new System.Drawing.Size(186, 462);
             this.panel1.TabIndex = 6;
             // 
             // gBox_Kat1
             // 
-            this.gBox_Kat1.Controls.Add(this.button5);
-            this.gBox_Kat1.Controls.Add(this.button4);
-            this.gBox_Kat1.Controls.Add(this.button3);
-            this.gBox_Kat1.Controls.Add(this.button2);
-            this.gBox_Kat1.Controls.Add(this.button1);
+            this.gBox_Kat1.Controls.Add(this.label6);
+            this.gBox_Kat1.Controls.Add(this.label5);
+            this.gBox_Kat1.Controls.Add(this.label4);
+            this.gBox_Kat1.Controls.Add(this.label3);
+            this.gBox_Kat1.Controls.Add(this.label2);
+            this.gBox_Kat1.Controls.Add(this.btn_A5);
+            this.gBox_Kat1.Controls.Add(this.btn_A4);
+            this.gBox_Kat1.Controls.Add(this.btn_A3);
+            this.gBox_Kat1.Controls.Add(this.btn_A2);
+            this.gBox_Kat1.Controls.Add(this.btn_A1);
             this.gBox_Kat1.ForeColor = System.Drawing.Color.White;
-            this.gBox_Kat1.Location = new System.Drawing.Point(184, 74);
-            this.gBox_Kat1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gBox_Kat1.Location = new System.Drawing.Point(210, 100);
             this.gBox_Kat1.Name = "gBox_Kat1";
-            this.gBox_Kat1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gBox_Kat1.Size = new System.Drawing.Size(122, 259);
+            this.gBox_Kat1.Size = new System.Drawing.Size(179, 336);
             this.gBox_Kat1.TabIndex = 11;
             this.gBox_Kat1.TabStop = false;
             this.gBox_Kat1.Text = "1. Kat Bilgileri";
             // 
-            // button5
+            // label2
             // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(9, 214);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 34);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "34 KMK 1234";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.parkClick);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(8, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "A1";
             // 
-            // button4
+            // btn_A5
             // 
-            this.button4.BackColor = System.Drawing.Color.Silver;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(9, 169);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 34);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "34 KMK 1234";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.parkClick);
+            this.btn_A5.BackColor = System.Drawing.Color.Silver;
+            this.btn_A5.FlatAppearance.BorderSize = 0;
+            this.btn_A5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_A5.Location = new System.Drawing.Point(43, 275);
+            this.btn_A5.Name = "btn_A5";
+            this.btn_A5.Size = new System.Drawing.Size(117, 45);
+            this.btn_A5.TabIndex = 4;
+            this.btn_A5.Text = "34 KMK 1234";
+            this.btn_A5.UseVisualStyleBackColor = false;
+            this.btn_A5.Click += new System.EventHandler(this.parkClick);
             // 
-            // button3
+            // btn_A4
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(9, 124);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 34);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "34 KMK 1234";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.parkClick);
+            this.btn_A4.BackColor = System.Drawing.Color.Silver;
+            this.btn_A4.FlatAppearance.BorderSize = 0;
+            this.btn_A4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_A4.Location = new System.Drawing.Point(43, 215);
+            this.btn_A4.Name = "btn_A4";
+            this.btn_A4.Size = new System.Drawing.Size(117, 45);
+            this.btn_A4.TabIndex = 3;
+            this.btn_A4.Text = "34 KMK 1234";
+            this.btn_A4.UseVisualStyleBackColor = false;
+            this.btn_A4.Click += new System.EventHandler(this.parkClick);
             // 
-            // button2
+            // btn_A3
             // 
-            this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(9, 75);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 34);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "34 KMK 1234";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.parkClick);
+            this.btn_A3.BackColor = System.Drawing.Color.Silver;
+            this.btn_A3.FlatAppearance.BorderSize = 0;
+            this.btn_A3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_A3.Location = new System.Drawing.Point(43, 155);
+            this.btn_A3.Name = "btn_A3";
+            this.btn_A3.Size = new System.Drawing.Size(117, 45);
+            this.btn_A3.TabIndex = 2;
+            this.btn_A3.Text = "34 KMK 1234";
+            this.btn_A3.UseVisualStyleBackColor = false;
+            this.btn_A3.Click += new System.EventHandler(this.parkClick);
             // 
-            // button1
+            // btn_A2
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(9, 26);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 34);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "34 KMK 1234";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.parkClick);
+            this.btn_A2.BackColor = System.Drawing.Color.Green;
+            this.btn_A2.FlatAppearance.BorderSize = 0;
+            this.btn_A2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_A2.Location = new System.Drawing.Point(43, 95);
+            this.btn_A2.Name = "btn_A2";
+            this.btn_A2.Size = new System.Drawing.Size(117, 45);
+            this.btn_A2.TabIndex = 1;
+            this.btn_A2.Text = "34 KMK 1234";
+            this.btn_A2.UseVisualStyleBackColor = false;
+            this.btn_A2.Click += new System.EventHandler(this.parkClick);
             // 
-            // gBox_Kat2
+            // btn_A1
             // 
-            this.gBox_Kat2.Controls.Add(this.button6);
-            this.gBox_Kat2.Controls.Add(this.button7);
-            this.gBox_Kat2.Controls.Add(this.button8);
-            this.gBox_Kat2.Controls.Add(this.button9);
-            this.gBox_Kat2.Controls.Add(this.button10);
-            this.gBox_Kat2.ForeColor = System.Drawing.Color.White;
-            this.gBox_Kat2.Location = new System.Drawing.Point(355, 74);
-            this.gBox_Kat2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gBox_Kat2.Name = "gBox_Kat2";
-            this.gBox_Kat2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gBox_Kat2.Size = new System.Drawing.Size(122, 259);
-            this.gBox_Kat2.TabIndex = 11;
-            this.gBox_Kat2.TabStop = false;
-            this.gBox_Kat2.Text = "2. Kat Bilgileri";
+            this.btn_A1.BackColor = System.Drawing.Color.Red;
+            this.btn_A1.FlatAppearance.BorderSize = 0;
+            this.btn_A1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_A1.Location = new System.Drawing.Point(43, 35);
+            this.btn_A1.Name = "btn_A1";
+            this.btn_A1.Size = new System.Drawing.Size(117, 45);
+            this.btn_A1.TabIndex = 0;
+            this.btn_A1.Text = "34 KMK 1234";
+            this.btn_A1.UseVisualStyleBackColor = false;
+            this.btn_A1.Click += new System.EventHandler(this.parkClick);
             // 
-            // button6
+            // label3
             // 
-            this.button6.BackColor = System.Drawing.Color.Silver;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(9, 214);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(102, 34);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "34 KMK 1234";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.parkClick);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(8, 105);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "A2";
             // 
-            // button7
+            // label4
             // 
-            this.button7.BackColor = System.Drawing.Color.Silver;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Location = new System.Drawing.Point(9, 169);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(102, 34);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "34 KMK 1234";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.parkClick);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(8, 165);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "A3";
             // 
-            // button8
+            // label5
             // 
-            this.button8.BackColor = System.Drawing.Color.Silver;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Location = new System.Drawing.Point(9, 124);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(102, 34);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "34 KMK 1234";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.parkClick);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(8, 225);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 20);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "A4";
             // 
-            // button9
+            // label6
             // 
-            this.button9.BackColor = System.Drawing.Color.Silver;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Location = new System.Drawing.Point(9, 75);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(102, 34);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "34 KMK 1234";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.parkClick);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(8, 285);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 20);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "A5";
             // 
-            // button10
+            // groupBox1
             // 
-            this.button10.BackColor = System.Drawing.Color.Silver;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Location = new System.Drawing.Point(9, 26);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(102, 34);
-            this.button10.TabIndex = 0;
-            this.button10.Text = "34 KMK 1234";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.parkClick);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.btn_B5);
+            this.groupBox1.Controls.Add(this.btn_B4);
+            this.groupBox1.Controls.Add(this.btn_B3);
+            this.groupBox1.Controls.Add(this.btn_B2);
+            this.groupBox1.Controls.Add(this.btn_B1);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(410, 100);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(179, 336);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "2. Kat Bilgileri";
             // 
-            // gBox_Kat3
+            // label7
             // 
-            this.gBox_Kat3.Controls.Add(this.button11);
-            this.gBox_Kat3.Controls.Add(this.button12);
-            this.gBox_Kat3.Controls.Add(this.button13);
-            this.gBox_Kat3.Controls.Add(this.button14);
-            this.gBox_Kat3.Controls.Add(this.button15);
-            this.gBox_Kat3.ForeColor = System.Drawing.Color.White;
-            this.gBox_Kat3.Location = new System.Drawing.Point(526, 74);
-            this.gBox_Kat3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gBox_Kat3.Name = "gBox_Kat3";
-            this.gBox_Kat3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gBox_Kat3.Size = new System.Drawing.Size(122, 259);
-            this.gBox_Kat3.TabIndex = 11;
-            this.gBox_Kat3.TabStop = false;
-            this.gBox_Kat3.Text = "3. Kat Bilgileri";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(8, 285);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(28, 20);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "B5";
             // 
-            // button11
+            // label8
             // 
-            this.button11.BackColor = System.Drawing.Color.Silver;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Location = new System.Drawing.Point(9, 214);
-            this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(102, 34);
-            this.button11.TabIndex = 4;
-            this.button11.Text = "34 KMK 1234";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.parkClick);
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(8, 225);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 20);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "B4";
             // 
-            // button12
+            // label9
             // 
-            this.button12.BackColor = System.Drawing.Color.Silver;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button12.Location = new System.Drawing.Point(9, 169);
-            this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(102, 34);
-            this.button12.TabIndex = 3;
-            this.button12.Text = "34 KMK 1234";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.parkClick);
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(8, 165);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 20);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "B3";
             // 
-            // button13
+            // label10
             // 
-            this.button13.BackColor = System.Drawing.Color.Silver;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button13.Location = new System.Drawing.Point(9, 124);
-            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(102, 34);
-            this.button13.TabIndex = 2;
-            this.button13.Text = "34 KMK 1234";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.parkClick);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(8, 105);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(28, 20);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "B2";
             // 
-            // button14
+            // label11
             // 
-            this.button14.BackColor = System.Drawing.Color.Silver;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button14.Location = new System.Drawing.Point(9, 75);
-            this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(102, 34);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "34 KMK 1234";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.parkClick);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(8, 45);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(28, 20);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "B1";
             // 
-            // button15
+            // btn_B5
             // 
-            this.button15.BackColor = System.Drawing.Color.Silver;
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button15.Location = new System.Drawing.Point(9, 26);
-            this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(102, 34);
-            this.button15.TabIndex = 0;
-            this.button15.Text = "34 KMK 1234";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.parkClick);
+            this.btn_B5.BackColor = System.Drawing.Color.Silver;
+            this.btn_B5.FlatAppearance.BorderSize = 0;
+            this.btn_B5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_B5.Location = new System.Drawing.Point(43, 275);
+            this.btn_B5.Name = "btn_B5";
+            this.btn_B5.Size = new System.Drawing.Size(117, 45);
+            this.btn_B5.TabIndex = 4;
+            this.btn_B5.Text = "34 KMK 1234";
+            this.btn_B5.UseVisualStyleBackColor = false;
+            this.btn_B5.Click += new System.EventHandler(this.parkClick);
             // 
-            // gBox_Kat4
+            // btn_B4
             // 
-            this.gBox_Kat4.Controls.Add(this.button16);
-            this.gBox_Kat4.Controls.Add(this.button17);
-            this.gBox_Kat4.Controls.Add(this.button18);
-            this.gBox_Kat4.Controls.Add(this.button19);
-            this.gBox_Kat4.Controls.Add(this.button20);
-            this.gBox_Kat4.ForeColor = System.Drawing.Color.White;
-            this.gBox_Kat4.Location = new System.Drawing.Point(696, 74);
-            this.gBox_Kat4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gBox_Kat4.Name = "gBox_Kat4";
-            this.gBox_Kat4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gBox_Kat4.Size = new System.Drawing.Size(122, 259);
-            this.gBox_Kat4.TabIndex = 11;
-            this.gBox_Kat4.TabStop = false;
-            this.gBox_Kat4.Text = "4. Kat Bilgileri";
+            this.btn_B4.BackColor = System.Drawing.Color.Silver;
+            this.btn_B4.FlatAppearance.BorderSize = 0;
+            this.btn_B4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_B4.Location = new System.Drawing.Point(43, 215);
+            this.btn_B4.Name = "btn_B4";
+            this.btn_B4.Size = new System.Drawing.Size(117, 45);
+            this.btn_B4.TabIndex = 3;
+            this.btn_B4.Text = "34 KMK 1234";
+            this.btn_B4.UseVisualStyleBackColor = false;
+            this.btn_B4.Click += new System.EventHandler(this.parkClick);
             // 
-            // button16
+            // btn_B3
             // 
-            this.button16.BackColor = System.Drawing.Color.Silver;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button16.Location = new System.Drawing.Point(9, 214);
-            this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(102, 34);
-            this.button16.TabIndex = 4;
-            this.button16.Text = "34 KMK 1234";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.parkClick);
+            this.btn_B3.BackColor = System.Drawing.Color.Silver;
+            this.btn_B3.FlatAppearance.BorderSize = 0;
+            this.btn_B3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_B3.Location = new System.Drawing.Point(43, 155);
+            this.btn_B3.Name = "btn_B3";
+            this.btn_B3.Size = new System.Drawing.Size(117, 45);
+            this.btn_B3.TabIndex = 2;
+            this.btn_B3.Text = "34 KMK 1234";
+            this.btn_B3.UseVisualStyleBackColor = false;
+            this.btn_B3.Click += new System.EventHandler(this.parkClick);
             // 
-            // button17
+            // btn_B2
             // 
-            this.button17.BackColor = System.Drawing.Color.Silver;
-            this.button17.FlatAppearance.BorderSize = 0;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button17.Location = new System.Drawing.Point(9, 169);
-            this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(102, 34);
-            this.button17.TabIndex = 3;
-            this.button17.Text = "34 KMK 1234";
-            this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.parkClick);
+            this.btn_B2.BackColor = System.Drawing.Color.Green;
+            this.btn_B2.FlatAppearance.BorderSize = 0;
+            this.btn_B2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_B2.Location = new System.Drawing.Point(43, 95);
+            this.btn_B2.Name = "btn_B2";
+            this.btn_B2.Size = new System.Drawing.Size(117, 45);
+            this.btn_B2.TabIndex = 1;
+            this.btn_B2.Text = "34 KMK 1234";
+            this.btn_B2.UseVisualStyleBackColor = false;
+            this.btn_B2.Click += new System.EventHandler(this.parkClick);
             // 
-            // button18
+            // btn_B1
             // 
-            this.button18.BackColor = System.Drawing.Color.Silver;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button18.Location = new System.Drawing.Point(9, 124);
-            this.button18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(102, 34);
-            this.button18.TabIndex = 2;
-            this.button18.Text = "34 KMK 1234";
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.parkClick);
+            this.btn_B1.BackColor = System.Drawing.Color.Red;
+            this.btn_B1.FlatAppearance.BorderSize = 0;
+            this.btn_B1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_B1.Location = new System.Drawing.Point(43, 35);
+            this.btn_B1.Name = "btn_B1";
+            this.btn_B1.Size = new System.Drawing.Size(117, 45);
+            this.btn_B1.TabIndex = 0;
+            this.btn_B1.Text = "34 KMK 1234";
+            this.btn_B1.UseVisualStyleBackColor = false;
+            this.btn_B1.Click += new System.EventHandler(this.parkClick);
             // 
-            // button19
+            // groupBox2
             // 
-            this.button19.BackColor = System.Drawing.Color.Silver;
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button19.Location = new System.Drawing.Point(9, 75);
-            this.button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(102, 34);
-            this.button19.TabIndex = 1;
-            this.button19.Text = "34 KMK 1234";
-            this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.parkClick);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.btn_C5);
+            this.groupBox2.Controls.Add(this.btn_C4);
+            this.groupBox2.Controls.Add(this.btn_C3);
+            this.groupBox2.Controls.Add(this.btn_C2);
+            this.groupBox2.Controls.Add(this.btn_C1);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(610, 100);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(179, 336);
+            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "3. Kat Bilgileri";
             // 
-            // button20
+            // label12
             // 
-            this.button20.BackColor = System.Drawing.Color.Silver;
-            this.button20.FlatAppearance.BorderSize = 0;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button20.Location = new System.Drawing.Point(9, 26);
-            this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(102, 34);
-            this.button20.TabIndex = 0;
-            this.button20.Text = "34 KMK 1234";
-            this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.parkClick);
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(8, 285);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(27, 20);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "C5";
             // 
-            // gBox_VIP
+            // label13
             // 
-            this.gBox_VIP.Controls.Add(this.button21);
-            this.gBox_VIP.Controls.Add(this.button22);
-            this.gBox_VIP.Controls.Add(this.button23);
-            this.gBox_VIP.Controls.Add(this.button24);
-            this.gBox_VIP.Controls.Add(this.button25);
-            this.gBox_VIP.ForeColor = System.Drawing.Color.White;
-            this.gBox_VIP.Location = new System.Drawing.Point(867, 74);
-            this.gBox_VIP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gBox_VIP.Name = "gBox_VIP";
-            this.gBox_VIP.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gBox_VIP.Size = new System.Drawing.Size(122, 259);
-            this.gBox_VIP.TabIndex = 11;
-            this.gBox_VIP.TabStop = false;
-            this.gBox_VIP.Text = "VIP Kat Bilgileri";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(8, 225);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(27, 20);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "C4";
             // 
-            // button21
+            // label14
             // 
-            this.button21.BackColor = System.Drawing.Color.Silver;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button21.Location = new System.Drawing.Point(9, 214);
-            this.button21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(102, 34);
-            this.button21.TabIndex = 4;
-            this.button21.Text = "34 KMK 1234";
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.parkClick);
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(8, 165);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(27, 20);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "C3";
             // 
-            // button22
+            // label15
             // 
-            this.button22.BackColor = System.Drawing.Color.Silver;
-            this.button22.FlatAppearance.BorderSize = 0;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button22.Location = new System.Drawing.Point(9, 169);
-            this.button22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(102, 34);
-            this.button22.TabIndex = 3;
-            this.button22.Text = "34 KMK 1234";
-            this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.parkClick);
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(8, 105);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(27, 20);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "C2";
             // 
-            // button23
+            // label16
             // 
-            this.button23.BackColor = System.Drawing.Color.Silver;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button23.Location = new System.Drawing.Point(9, 124);
-            this.button23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(102, 34);
-            this.button23.TabIndex = 2;
-            this.button23.Text = "34 KMK 1234";
-            this.button23.UseVisualStyleBackColor = false;
-            this.button23.Click += new System.EventHandler(this.parkClick);
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(8, 45);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(27, 20);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "C1";
             // 
-            // button24
+            // btn_C5
             // 
-            this.button24.BackColor = System.Drawing.Color.Silver;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button24.Location = new System.Drawing.Point(9, 75);
-            this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(102, 34);
-            this.button24.TabIndex = 1;
-            this.button24.Text = "34 KMK 1234";
-            this.button24.UseVisualStyleBackColor = false;
-            this.button24.Click += new System.EventHandler(this.parkClick);
+            this.btn_C5.BackColor = System.Drawing.Color.Silver;
+            this.btn_C5.FlatAppearance.BorderSize = 0;
+            this.btn_C5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_C5.Location = new System.Drawing.Point(43, 275);
+            this.btn_C5.Name = "btn_C5";
+            this.btn_C5.Size = new System.Drawing.Size(117, 45);
+            this.btn_C5.TabIndex = 4;
+            this.btn_C5.Text = "34 KMK 1234";
+            this.btn_C5.UseVisualStyleBackColor = false;
+            this.btn_C5.Click += new System.EventHandler(this.parkClick);
             // 
-            // button25
+            // btn_C4
             // 
-            this.button25.BackColor = System.Drawing.Color.Silver;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button25.Location = new System.Drawing.Point(9, 26);
-            this.button25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(102, 34);
-            this.button25.TabIndex = 0;
-            this.button25.Text = "34 KMK 1234";
-            this.button25.UseVisualStyleBackColor = false;
-            this.button25.Click += new System.EventHandler(this.parkClick);
+            this.btn_C4.BackColor = System.Drawing.Color.Silver;
+            this.btn_C4.FlatAppearance.BorderSize = 0;
+            this.btn_C4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_C4.Location = new System.Drawing.Point(43, 215);
+            this.btn_C4.Name = "btn_C4";
+            this.btn_C4.Size = new System.Drawing.Size(117, 45);
+            this.btn_C4.TabIndex = 3;
+            this.btn_C4.Text = "34 KMK 1234";
+            this.btn_C4.UseVisualStyleBackColor = false;
+            this.btn_C4.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_C3
+            // 
+            this.btn_C3.BackColor = System.Drawing.Color.Silver;
+            this.btn_C3.FlatAppearance.BorderSize = 0;
+            this.btn_C3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_C3.Location = new System.Drawing.Point(43, 155);
+            this.btn_C3.Name = "btn_C3";
+            this.btn_C3.Size = new System.Drawing.Size(117, 45);
+            this.btn_C3.TabIndex = 2;
+            this.btn_C3.Text = "34 KMK 1234";
+            this.btn_C3.UseVisualStyleBackColor = false;
+            this.btn_C3.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_C2
+            // 
+            this.btn_C2.BackColor = System.Drawing.Color.Green;
+            this.btn_C2.FlatAppearance.BorderSize = 0;
+            this.btn_C2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_C2.Location = new System.Drawing.Point(43, 95);
+            this.btn_C2.Name = "btn_C2";
+            this.btn_C2.Size = new System.Drawing.Size(117, 45);
+            this.btn_C2.TabIndex = 1;
+            this.btn_C2.Text = "34 KMK 1234";
+            this.btn_C2.UseVisualStyleBackColor = false;
+            this.btn_C2.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_C1
+            // 
+            this.btn_C1.BackColor = System.Drawing.Color.Red;
+            this.btn_C1.FlatAppearance.BorderSize = 0;
+            this.btn_C1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_C1.Location = new System.Drawing.Point(43, 35);
+            this.btn_C1.Name = "btn_C1";
+            this.btn_C1.Size = new System.Drawing.Size(117, 45);
+            this.btn_C1.TabIndex = 0;
+            this.btn_C1.Text = "34 KMK 1234";
+            this.btn_C1.UseVisualStyleBackColor = false;
+            this.btn_C1.Click += new System.EventHandler(this.parkClick);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.btn_D5);
+            this.groupBox3.Controls.Add(this.btn_D4);
+            this.groupBox3.Controls.Add(this.btn_D3);
+            this.groupBox3.Controls.Add(this.btn_D2);
+            this.groupBox3.Controls.Add(this.btn_D1);
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Location = new System.Drawing.Point(810, 100);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(179, 336);
+            this.groupBox3.TabIndex = 11;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "4. Kat Bilgileri";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(8, 285);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(29, 20);
+            this.label17.TabIndex = 9;
+            this.label17.Text = "D5";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(8, 225);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(29, 20);
+            this.label18.TabIndex = 8;
+            this.label18.Text = "D4";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.Location = new System.Drawing.Point(8, 165);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(29, 20);
+            this.label19.TabIndex = 7;
+            this.label19.Text = "D3";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(8, 105);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(29, 20);
+            this.label20.TabIndex = 6;
+            this.label20.Text = "D2";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(8, 45);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(29, 20);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "D1";
+            // 
+            // btn_D5
+            // 
+            this.btn_D5.BackColor = System.Drawing.Color.Silver;
+            this.btn_D5.FlatAppearance.BorderSize = 0;
+            this.btn_D5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_D5.Location = new System.Drawing.Point(43, 275);
+            this.btn_D5.Name = "btn_D5";
+            this.btn_D5.Size = new System.Drawing.Size(117, 45);
+            this.btn_D5.TabIndex = 4;
+            this.btn_D5.Text = "34 KMK 1234";
+            this.btn_D5.UseVisualStyleBackColor = false;
+            this.btn_D5.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_D4
+            // 
+            this.btn_D4.BackColor = System.Drawing.Color.Silver;
+            this.btn_D4.FlatAppearance.BorderSize = 0;
+            this.btn_D4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_D4.Location = new System.Drawing.Point(43, 215);
+            this.btn_D4.Name = "btn_D4";
+            this.btn_D4.Size = new System.Drawing.Size(117, 45);
+            this.btn_D4.TabIndex = 3;
+            this.btn_D4.Text = "34 KMK 1234";
+            this.btn_D4.UseVisualStyleBackColor = false;
+            this.btn_D4.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_D3
+            // 
+            this.btn_D3.BackColor = System.Drawing.Color.Silver;
+            this.btn_D3.FlatAppearance.BorderSize = 0;
+            this.btn_D3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_D3.Location = new System.Drawing.Point(43, 155);
+            this.btn_D3.Name = "btn_D3";
+            this.btn_D3.Size = new System.Drawing.Size(117, 45);
+            this.btn_D3.TabIndex = 2;
+            this.btn_D3.Text = "34 KMK 1234";
+            this.btn_D3.UseVisualStyleBackColor = false;
+            this.btn_D3.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_D2
+            // 
+            this.btn_D2.BackColor = System.Drawing.Color.Green;
+            this.btn_D2.FlatAppearance.BorderSize = 0;
+            this.btn_D2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_D2.Location = new System.Drawing.Point(43, 95);
+            this.btn_D2.Name = "btn_D2";
+            this.btn_D2.Size = new System.Drawing.Size(117, 45);
+            this.btn_D2.TabIndex = 1;
+            this.btn_D2.Text = "34 KMK 1234";
+            this.btn_D2.UseVisualStyleBackColor = false;
+            this.btn_D2.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_D1
+            // 
+            this.btn_D1.BackColor = System.Drawing.Color.Red;
+            this.btn_D1.FlatAppearance.BorderSize = 0;
+            this.btn_D1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_D1.Location = new System.Drawing.Point(43, 35);
+            this.btn_D1.Name = "btn_D1";
+            this.btn_D1.Size = new System.Drawing.Size(117, 45);
+            this.btn_D1.TabIndex = 0;
+            this.btn_D1.Text = "34 KMK 1234";
+            this.btn_D1.UseVisualStyleBackColor = false;
+            this.btn_D1.Click += new System.EventHandler(this.parkClick);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Controls.Add(this.label25);
+            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.btn_V5);
+            this.groupBox4.Controls.Add(this.btn_V4);
+            this.groupBox4.Controls.Add(this.btn_V3);
+            this.groupBox4.Controls.Add(this.btn_V2);
+            this.groupBox4.Controls.Add(this.btn_V1);
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
+            this.groupBox4.Location = new System.Drawing.Point(1010, 100);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(179, 336);
+            this.groupBox4.TabIndex = 11;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "VIP Kat Bilgileri";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label22.Location = new System.Drawing.Point(8, 285);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(28, 20);
+            this.label22.TabIndex = 9;
+            this.label22.Text = "V5";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(8, 225);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(28, 20);
+            this.label23.TabIndex = 8;
+            this.label23.Text = "V4";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.Location = new System.Drawing.Point(8, 165);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(28, 20);
+            this.label24.TabIndex = 7;
+            this.label24.Text = "V3";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.Location = new System.Drawing.Point(8, 105);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(28, 20);
+            this.label25.TabIndex = 6;
+            this.label25.Text = "V2";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label26.Location = new System.Drawing.Point(8, 45);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(28, 20);
+            this.label26.TabIndex = 5;
+            this.label26.Text = "V1";
+            // 
+            // btn_V5
+            // 
+            this.btn_V5.BackColor = System.Drawing.Color.Silver;
+            this.btn_V5.FlatAppearance.BorderSize = 0;
+            this.btn_V5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_V5.Location = new System.Drawing.Point(43, 275);
+            this.btn_V5.Name = "btn_V5";
+            this.btn_V5.Size = new System.Drawing.Size(117, 45);
+            this.btn_V5.TabIndex = 4;
+            this.btn_V5.Text = "34 KMK 1234";
+            this.btn_V5.UseVisualStyleBackColor = false;
+            this.btn_V5.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_V4
+            // 
+            this.btn_V4.BackColor = System.Drawing.Color.Silver;
+            this.btn_V4.FlatAppearance.BorderSize = 0;
+            this.btn_V4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_V4.Location = new System.Drawing.Point(43, 215);
+            this.btn_V4.Name = "btn_V4";
+            this.btn_V4.Size = new System.Drawing.Size(117, 45);
+            this.btn_V4.TabIndex = 3;
+            this.btn_V4.Text = "34 KMK 1234";
+            this.btn_V4.UseVisualStyleBackColor = false;
+            this.btn_V4.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_V3
+            // 
+            this.btn_V3.BackColor = System.Drawing.Color.Silver;
+            this.btn_V3.FlatAppearance.BorderSize = 0;
+            this.btn_V3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_V3.Location = new System.Drawing.Point(43, 155);
+            this.btn_V3.Name = "btn_V3";
+            this.btn_V3.Size = new System.Drawing.Size(117, 45);
+            this.btn_V3.TabIndex = 2;
+            this.btn_V3.Text = "34 KMK 1234";
+            this.btn_V3.UseVisualStyleBackColor = false;
+            this.btn_V3.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_V2
+            // 
+            this.btn_V2.BackColor = System.Drawing.Color.Green;
+            this.btn_V2.FlatAppearance.BorderSize = 0;
+            this.btn_V2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_V2.Location = new System.Drawing.Point(43, 95);
+            this.btn_V2.Name = "btn_V2";
+            this.btn_V2.Size = new System.Drawing.Size(117, 45);
+            this.btn_V2.TabIndex = 1;
+            this.btn_V2.Text = "34 KMK 1234";
+            this.btn_V2.UseVisualStyleBackColor = false;
+            this.btn_V2.Click += new System.EventHandler(this.parkClick);
+            // 
+            // btn_V1
+            // 
+            this.btn_V1.BackColor = System.Drawing.Color.Red;
+            this.btn_V1.FlatAppearance.BorderSize = 0;
+            this.btn_V1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_V1.Location = new System.Drawing.Point(43, 35);
+            this.btn_V1.Name = "btn_V1";
+            this.btn_V1.Size = new System.Drawing.Size(117, 45);
+            this.btn_V1.TabIndex = 0;
+            this.btn_V1.Text = "34 KMK 1234";
+            this.btn_V1.UseVisualStyleBackColor = false;
+            this.btn_V1.Click += new System.EventHandler(this.parkClick);
             // 
             // CarState
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1053, 425);
-            this.Controls.Add(this.gBox_VIP);
-            this.Controls.Add(this.gBox_Kat4);
-            this.Controls.Add(this.gBox_Kat3);
-            this.Controls.Add(this.gBox_Kat2);
+            this.ClientSize = new System.Drawing.Size(1228, 462);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gBox_Kat1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pnl_HomeNav);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CarState";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CarState";
@@ -678,10 +934,15 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.gBox_Kat1.ResumeLayout(false);
-            this.gBox_Kat2.ResumeLayout(false);
-            this.gBox_Kat3.ResumeLayout(false);
-            this.gBox_Kat4.ResumeLayout(false);
-            this.gBox_VIP.ResumeLayout(false);
+            this.gBox_Kat1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -705,34 +966,58 @@
         private RadioButton rB_2Kat;
         private RadioButton rB_1Kat;
         private GroupBox gBox_Kat1;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private GroupBox gBox_Kat2;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private GroupBox gBox_Kat3;
-        private Button button11;
-        private Button button12;
-        private Button button13;
-        private Button button14;
-        private Button button15;
-        private GroupBox gBox_Kat4;
-        private Button button16;
-        private Button button17;
-        private Button button18;
-        private Button button19;
-        private Button button20;
-        private GroupBox gBox_VIP;
-        private Button button21;
-        private Button button22;
-        private Button button23;
-        private Button button24;
-        private Button button25;
+        private Button btn_A5;
+        private Button btn_A4;
+        private Button btn_A3;
+        private Button btn_A2;
+        private Button btn_A1;
+        private Label label2;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private Label label3;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Button btn_B5;
+        private Button btn_B4;
+        private Button btn_B3;
+        private Button btn_B2;
+        private Button btn_B1;
+        private GroupBox groupBox2;
+        private Label label12;
+        private Label label13;
+        private Label label14;
+        private Label label15;
+        private Label label16;
+        private Button btn_C5;
+        private Button btn_C4;
+        private Button btn_C3;
+        private Button btn_C2;
+        private Button btn_C1;
+        private GroupBox groupBox3;
+        private Label label17;
+        private Label label18;
+        private Label label19;
+        private Label label20;
+        private Label label21;
+        private Button btn_D5;
+        private Button btn_D4;
+        private Button btn_D3;
+        private Button btn_D2;
+        private Button btn_D1;
+        private GroupBox groupBox4;
+        private Label label22;
+        private Label label23;
+        private Label label24;
+        private Label label25;
+        private Label label26;
+        private Button btn_V5;
+        private Button btn_V4;
+        private Button btn_V3;
+        private Button btn_V2;
+        private Button btn_V1;
     }
 }

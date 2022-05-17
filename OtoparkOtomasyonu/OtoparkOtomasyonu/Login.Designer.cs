@@ -46,10 +46,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::OtoparkOtomasyonu.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(76, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 79);
+            this.pictureBox1.Size = new System.Drawing.Size(121, 105);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -57,10 +56,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::OtoparkOtomasyonu.Properties.Resources.userx30;
-            this.pictureBox2.Location = new System.Drawing.Point(24, 109);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(27, 145);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 19);
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -68,19 +66,17 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel1.Location = new System.Drawing.Point(24, 132);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(27, 176);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(206, 1);
+            this.panel1.Size = new System.Drawing.Size(235, 1);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::OtoparkOtomasyonu.Properties.Resources.lock_darkx24;
-            this.pictureBox3.Location = new System.Drawing.Point(24, 170);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(27, 227);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(22, 19);
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -88,10 +84,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.panel2.Location = new System.Drawing.Point(24, 194);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(27, 259);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(206, 1);
+            this.panel2.Size = new System.Drawing.Size(235, 1);
             this.panel2.TabIndex = 2;
             // 
             // btn_Login
@@ -101,10 +96,9 @@
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Login.Font = new System.Drawing.Font("Bahnschrift", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Login.ForeColor = System.Drawing.Color.White;
-            this.btn_Login.Location = new System.Drawing.Point(21, 250);
-            this.btn_Login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Login.Location = new System.Drawing.Point(24, 333);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(206, 38);
+            this.btn_Login.Size = new System.Drawing.Size(235, 51);
             this.btn_Login.TabIndex = 3;
             this.btn_Login.Text = "Giriş Yap";
             this.btn_Login.UseVisualStyleBackColor = false;
@@ -116,9 +110,9 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label1.Location = new System.Drawing.Point(163, 219);
+            this.label1.Location = new System.Drawing.Point(186, 292);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 17);
+            this.label1.Size = new System.Drawing.Size(75, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Temizle";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -129,9 +123,9 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label2.Location = new System.Drawing.Point(102, 290);
+            this.label2.Location = new System.Drawing.Point(117, 387);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 17);
+            this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Çıkış";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -141,11 +135,10 @@
             this.txt_LoginUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_LoginUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt_LoginUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.txt_LoginUserName.Location = new System.Drawing.Point(51, 107);
-            this.txt_LoginUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_LoginUserName.Location = new System.Drawing.Point(58, 143);
             this.txt_LoginUserName.Multiline = true;
             this.txt_LoginUserName.Name = "txt_LoginUserName";
-            this.txt_LoginUserName.Size = new System.Drawing.Size(178, 18);
+            this.txt_LoginUserName.Size = new System.Drawing.Size(203, 24);
             this.txt_LoginUserName.TabIndex = 1;
             // 
             // txt_LoginPassword
@@ -153,20 +146,19 @@
             this.txt_LoginPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_LoginPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt_LoginPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.txt_LoginPassword.Location = new System.Drawing.Point(51, 170);
-            this.txt_LoginPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_LoginPassword.Location = new System.Drawing.Point(58, 227);
             this.txt_LoginPassword.Multiline = true;
             this.txt_LoginPassword.Name = "txt_LoginPassword";
             this.txt_LoginPassword.PasswordChar = '*';
-            this.txt_LoginPassword.Size = new System.Drawing.Size(178, 18);
+            this.txt_LoginPassword.Size = new System.Drawing.Size(203, 24);
             this.txt_LoginPassword.TabIndex = 2;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(254, 329);
+            this.ClientSize = new System.Drawing.Size(290, 439);
             this.Controls.Add(this.txt_LoginPassword);
             this.Controls.Add(this.txt_LoginUserName);
             this.Controls.Add(this.label2);
@@ -179,7 +171,6 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

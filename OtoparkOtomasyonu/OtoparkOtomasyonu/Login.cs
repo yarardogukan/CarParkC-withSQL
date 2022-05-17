@@ -19,7 +19,7 @@ namespace OtoparkOtomasyonu
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            if (txt_LoginUserName.Text=="admin" && txt_LoginPassword.Text=="admin")
+            if (txt_LoginUserName.Text=="admin" && txt_LoginPassword.Text=="123")
             {
                 new Home().Show();
                 this.Hide();

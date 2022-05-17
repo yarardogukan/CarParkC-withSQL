@@ -1,16 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7VWQHmTxKDEKIywHqeMrxHk6sYKk3XXgML5WWy8LyYaDidzw2MoBOOuCMh4aGtf6JUK42KbXSU3lmldOBDT5A==",
+  "dgSpecHash": "kS6uCpoQcEkAlDZS9XjDLbC8kc6kkIrwqNRbSNwJ8cj6oPGEeSoXhvILKSw4p1wvYl+5viA+oye2LobXbPaVlw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
+  "projectFilePath": "C:\\Users\\doguk\\OneDrive\\Masaüstü\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\devme\\.nuget\\packages\\circularprogressbar_net5\\3.0.0\\circularprogressbar_net5.3.0.0.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\scottplot\\4.1.45\\scottplot.4.1.45.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\scottplot.winforms\\4.1.45\\scottplot.winforms.4.1.45.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\system.drawing.common\\4.6.1\\system.drawing.common.4.6.1.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\winformanimation-net5\\2.0.0\\winformanimation-net5.2.0.0.nupkg.sha512"
+    "C:\\Users\\doguk\\.nuget\\packages\\circularprogressbar_net5\\3.0.0\\circularprogressbar_net5.3.0.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\optimizeddatareader\\1.1.0\\optimizeddatareader.1.1.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\savage.data\\5.4.2\\savage.data.5.4.2.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\scottplot\\4.1.45\\scottplot.4.1.45.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\scottplot.winforms\\4.1.45\\scottplot.winforms.4.1.45.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\sqlserverclient\\5.4.2\\sqlserverclient.5.4.2.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\system.drawing.common\\4.6.1\\system.drawing.common.4.6.1.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\doguk\\.nuget\\packages\\winformanimation-net5\\2.0.0\\winformanimation-net5.2.0.0.nupkg.sha512"
   ],
   "logs": []
 }
