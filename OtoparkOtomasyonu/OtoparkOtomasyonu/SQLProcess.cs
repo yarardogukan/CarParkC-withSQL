@@ -12,21 +12,25 @@ namespace OtoparkOtomasyonu
     internal class SQLProcess
     {
         private String sqlAddress = "Data Source=DESKTOP-NLRIGP6;Initial Catalog=otoparkVeritabani;Integrated Security=True";
-        private SqlConnection sqlConnection = new SqlConnection();
+        public SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-NLRIGP6;Initial Catalog=otoparkVeritabani;Integrated Security=True");
 
         /// <summary>
         /// Insert, Update, Delete işlemlerinde kullanılmalı
         /// </summary>
         public void executeQuery(String query)
         {
+            
             try
             {
-                SqlCommand cmd = new SqlCommand(query, sqlConnection);
                 sqlConnection.Open();
+                SqlCommand cmd = new SqlCommand(query, sqlConnection);
                 cmd.ExecuteNonQuery();
                 sqlConnection.Close();
-            }catch(Exception ex)
+            }
+            
+            catch(Exception ex)
             {
+                sqlConnection.Close();
                 Console.WriteLine(ex.ToString());
                 MessageBox.Show("Veri tabanı işlemlerinde bir hata meydana geldi");
             }
@@ -59,6 +63,7 @@ namespace OtoparkOtomasyonu
                     rows.Add(rowValues);
                 }
                 reader.Close();
+                sqlConnection.Close();
                 return rows;
             }
             else

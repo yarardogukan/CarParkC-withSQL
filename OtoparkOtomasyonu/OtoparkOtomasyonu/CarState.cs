@@ -102,11 +102,7 @@ namespace OtoparkOtomasyonu
             }
             else
             {
-                 
-               
-
-
-                for (int i = 0; i < buttons.Count; i++)
+                 for (int i = 0; i < buttons.Count; i++)
                 {
                     Button button = buttons[i];
                     

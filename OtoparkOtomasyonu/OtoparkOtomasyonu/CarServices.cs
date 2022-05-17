@@ -76,6 +76,8 @@ namespace OtoparkOtomasyonu
                     case "A1":
                         cBox_KatNu.SelectedIndex = 0;
                         cBox_ParkNu.SelectedIndex = 0;
+                        cBox_CikisKatNo.SelectedIndex = 0;
+                        cBox_CikisParkNu.SelectedIndex = 0;
                         break;
                     case "A2":
                         cBox_KatNu.SelectedIndex = 0;
@@ -160,6 +162,8 @@ namespace OtoparkOtomasyonu
                     case "V2":
                         cBox_KatNu.SelectedIndex = 4;
                         cBox_ParkNu.SelectedIndex = 1;
+                        cBox_CikisKatNo.SelectedIndex = 4;
+                        cBox_CikisParkNu.SelectedIndex = 1;
                         break;
                     case "V3":
                         cBox_KatNu.SelectedIndex = 4;
@@ -185,12 +189,62 @@ namespace OtoparkOtomasyonu
             else
             {
                 rB_Cikis.Select();
+
+                SQLProcess process = new SQLProcess();
+                List<Object> fatura = process.selectQuery("select * from tbl_Fatura where toplamtutar='NULL' AND kat_ID =" + katIdHesapla(cBox_CikisKatNo.SelectedIndex, cBox_CikisParkNu.SelectedIndex).ToString()) ?? new List<Object>();
+                if (fatura.Count == 0)
+                {
+                    MessageBox.Show("Veri tabanından veri Çekilirken bir hata meydana geldi.");
+                }
+
+                else
+                {
+                    List<Object> arac = (List<object>)(fatura[0] ?? new List<Object>());
+                    String aracPlaka = (String?)arac[1] ?? "Unknow";
+                    String girişZamani = (String?)arac[2] ?? "Unknow";
+                    int aracTipi = (int?)arac[5] ?? 0;
+
+                    txt_CikisPlakaNo.Text = aracPlaka;
+                    txt_CikisGirisTarihi.Text = girişZamani;
+                    cBox_AracTur.SelectedValue = aracTipi;
+                    
+                    txt_ToplamTutar.Text=tutarHesapla(girişZamani, txt_CikisTarihi.Text, aracTipi).ToString();
+                    
+                }
+            }
+        }
+
+        private int tutarHesapla(String girisZamanı, String cıkışZamani, int aracTur)
+        {
+            DateTime girisDate = DateTime.Parse(girisZamanı);
+            DateTime cikisDate = DateTime.Parse(cıkışZamani);
+            TimeSpan fark = cikisDate - girisDate;
+            int saatFark = Convert.ToInt32(fark.Hours.ToString());
+            return saatFark * aracTuruCarpimDegeri(aracTur);
+
+        }
+
+        private int aracTuruCarpimDegeri(int aracTur)
+        {
+            SQLProcess process = new SQLProcess();
+
+            List<Object> rows = process.selectQuery("select * from tbl_AracTuru where aracTuru_ID =" + aracTur.ToString()) ?? new List<Object>();
+
+            if (rows.Count == 0)
+            {
+                MessageBox.Show("Veri tabanından veri Çekilirken bir hata meydana geldi.");
             }
 
-           
+            else
+            {
+                List<Object> firstObject = (List<object>)(rows[0] ?? new List<Object>());
 
+                String ucret = (String?)firstObject[2] ?? "0";
 
-  
+                return Int32.Parse(ucret);
+            }
+
+            return -1;    
         }
 
         private void groupBox2_Enter(object sender, EventArgs e){/*yanlış basıldı*/}
@@ -238,11 +292,12 @@ namespace OtoparkOtomasyonu
         private void btn_CikisYap_Click(object sender, EventArgs e)
         {
             SQLProcess process = new SQLProcess();
-            List<Object> selectedObject = process.selectQuery("select * from tbl_Kat where kat_ID =" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex).ToString()) ?? new List<Object>();
+            List<Object> selectedObject = process.selectQuery("select * from tbl_Kat where kat_ID =" + katIdHesapla(cBox_CikisKatNo.SelectedIndex, cBox_CikisParkNu.SelectedIndex).ToString()) ?? new List<Object>();
             if (selectedObject.Count == 0)
             {
                 MessageBox.Show("Veri tabanından veri Çekilirken bir hata meydana geldi.");
-            }else
+            }
+            else
             {
                 List<Object> firstObject = (List<object>)(selectedObject[0] ?? new List<Object>());
 
@@ -253,8 +308,8 @@ namespace OtoparkOtomasyonu
                 }
                 else
                 {
-                    process.executeQuery("update tbl_Kat set parkDurumu='True' where kat_ID='" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex) + "'");
-                    process.executeQuery("update tbl_Fatura set "); // çıkış tarihini ve fiyatı set etmek gerekli.
+                   process.executeQuery("update tbl_Kat set parkDurumu='True' where kat_ID='" + katIdHesapla(cBox_KatNu.SelectedIndex, cBox_ParkNu.SelectedIndex) + "'");
+                    process.executeQuery("update tbl_Fatura set  "); // DÜZENLENECEK
                 }
             }
         }
@@ -288,7 +343,6 @@ namespace OtoparkOtomasyonu
         {
             int katHesapIndex = katNoIndex + 1;
             int parkHesapIndex = parkNoIndex + 1;
-
             return katHesapIndex * parkHesapIndex;
         }
     }

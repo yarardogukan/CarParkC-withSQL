@@ -75,7 +75,8 @@ namespace OtoparkOtomasyonu
         {
             SQLProcess process = new SQLProcess();
             List<Object> currentState = process.selectQuery("select * from tbl_Kat where parkDurumu='False'") ?? new List<object>(); // tabloda ki true false neyse o koyulacak
-            // BURADA + OLARAK Veri tabanında ki kayıtlara göre gün bazlı hesaplama yapıplıp araç ve tutar hesaplanacak
+            // BURADA + OLARAK Veri tabanında ki kayıtlara göre gün bazlı hesaplama yapıplıp
+            // araç ve tutar hesaplanacak
             
             mevcutAracSayisi = currentState.Count;
             float dolulukOrani = mevcutAracSayisi * 100 / 25;

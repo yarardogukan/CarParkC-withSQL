@@ -761,19 +761,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\devme\\.nuget\\packages\\": {}
+    "C:\\Users\\doguk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
+      "projectUniqueName": "C:\\Users\\doguk\\OneDrive\\Masaüstü\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
       "projectName": "OtoparkOtomasyonu",
-      "projectPath": "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
-      "packagesPath": "C:\\Users\\devme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\obj\\",
+      "projectPath": "C:\\Users\\doguk\\OneDrive\\Masaüstü\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
+      "packagesPath": "C:\\Users\\doguk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\doguk\\OneDrive\\Masaüstü\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\devme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\doguk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
