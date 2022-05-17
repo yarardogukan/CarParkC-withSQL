@@ -51,6 +51,8 @@ namespace OtoparkOtomasyonu
         {
             groupBox2.Visible = true;
             groupBox3.Visible = false;
+            pbGiris.Visible = true;
+            pBCikis.Visible = false;
             txt_GirisTarihi.Text = DateTime.Now.ToString();
         }
 
@@ -58,14 +60,19 @@ namespace OtoparkOtomasyonu
         {
             groupBox2.Visible=false;
             groupBox3.Visible=true;
+            pbGiris.Visible=false;
+            pBCikis.Visible=true;
             txt_CikisTarihi.Text = DateTime.Now.ToString();
         }
 
+        private void timer_SystemTime_Tick(object sender, EventArgs e)
+        {
+            lbl_HomeSystemTime.Text = DateTime.Now.ToString();
+        }
 
         private void CarServices_Load(object sender, EventArgs e)
         {
-            rB_Giris.Select();
-  
+            timer_SystemTime.Start();
         }
 
         private void groupBox2_Enter(object sender, EventArgs e){/*yanlış basıldı*/}
@@ -90,24 +97,6 @@ namespace OtoparkOtomasyonu
         private void btn_HomeCikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void cBox_KatNu_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cBox_ParkNu.Items.Clear();
-            for (int i = 1; i < 6; i++)
-            {
-                cBox_ParkNu.Items.Add("K" + (cBox_KatNu.SelectedIndex + 1).ToString() + "P" + i.ToString());
-            }
-        }
-
-        private void cBox_CikisKatNo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cBox_CikisParkNu.Items.Clear();
-            for (int i = 1; i < 6; i++)
-            {
-                cBox_CikisParkNu.Items.Add("K" + (cBox_KatNu.SelectedIndex + 1).ToString() + "P" + i.ToString());
-            }
         }
     }
 }

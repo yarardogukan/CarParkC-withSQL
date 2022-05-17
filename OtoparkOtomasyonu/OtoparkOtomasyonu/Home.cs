@@ -1,4 +1,4 @@
-ï»¿using System.Linq;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,16 +19,12 @@ namespace OtoparkOtomasyonu
                 int nHeightEllipse
             );
 
-        int toplamAracSayisi = 100;
-        int mevcutAracSayisi = 20;
-        
-
         public Home()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             
-            // Ãlk aÃ§Ã½ldÃ½Ã°Ã½nda Durum raporu butonun arkasÃ½nÃ½ sayfada oduÃ°umuz iÃ§in karartÃ½r.
+            // Ýlk açýldýðýnda Durum raporu butonun arkasýný sayfada oduðumuz için karartýr.
             pnl_HomeNav.Height = btn_HomeDurumRaporu.Height;
             pnl_HomeNav.Top = btn_HomeDurumRaporu.Top;
             pnl_HomeNav.Left = btn_HomeDurumRaporu.Left;
@@ -68,39 +64,12 @@ namespace OtoparkOtomasyonu
 
         private void timer_SystemTime_Tick(object sender, EventArgs e)
         {
-            lbl_HomeSystemTime.Text = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
+            lbl_HomeSystemTime.Text = DateTime.Now.ToString();
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
-            float dolulukOrani = mevcutAracSayisi * 100 / 25;
             timer_SystemTime.Start();
-            dolulukLabel.Text = "%" + dolulukOrani.ToString();
-            aracCountLabel.Text = toplamAracSayisi.ToString() + " Adet";
-            currentCarLabel.Text = mevcutAracSayisi.ToString() + " Adet";
-            gelirLabel.Text = "0â‚º";
-            gelirDate.Text = DateTime.Now.ToString("MM/dd/yyyy");
-            dolulukGraphs.Value = (int)dolulukOrani;
-            dolulukGraphs.ProgressColor = setProgressColor(dolulukOrani);
         }
-
-        private Color setProgressColor(float oran)
-        {
-
-            if (oran > 70 && oran <= 100)
-            {
-                return Color.DarkRed;
-            }
-          
-            else if (oran > 30 && oran <= 70)
-            {
-                return Color.DarkOrange;
-            }
-            else
-            {
-                return Color.DarkGreen;
-            }
-        }
-
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj": {}
+    "C:\\Users\\doguk\\source\\repos\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj": {}
   },
   "projects": {
-    "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj": {
+    "C:\\Users\\doguk\\source\\repos\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
+        "projectUniqueName": "C:\\Users\\doguk\\source\\repos\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
         "projectName": "OtoparkOtomasyonu",
-        "projectPath": "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
-        "packagesPath": "C:\\Users\\devme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\obj\\",
+        "projectPath": "C:\\Users\\doguk\\source\\repos\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
+        "packagesPath": "C:\\Users\\doguk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\doguk\\source\\repos\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\devme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\doguk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,13 +40,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "CircularProgressBar_NET5": {
+            "CircularProgressBar": {
               "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "ScottPlot.WinForms": {
-              "target": "Package",
-              "version": "[4.1.45, )"
+              "version": "[2.8.0.16, )"
             }
           },
           "imports": [

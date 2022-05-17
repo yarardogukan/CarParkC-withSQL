@@ -1,16 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7VWQHmTxKDEKIywHqeMrxHk6sYKk3XXgML5WWy8LyYaDidzw2MoBOOuCMh4aGtf6JUK42KbXSU3lmldOBDT5A==",
+  "dgSpecHash": "XKm6/Nzzp2Z9Qm6Hy9lOfydOS0psrHw2sWxUKi8NJ40h5aHDcoJ3zwBkORBmrkgIpuAqfZNVkTKtXmbnWmaRiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\devme\\Desktop\\CarParkC-withSQL\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
+  "projectFilePath": "C:\\Users\\doguk\\source\\repos\\OtoparkOtomasyonu\\OtoparkOtomasyonu\\OtoparkOtomasyonu.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\devme\\.nuget\\packages\\circularprogressbar_net5\\3.0.0\\circularprogressbar_net5.3.0.0.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\scottplot\\4.1.45\\scottplot.4.1.45.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\scottplot.winforms\\4.1.45\\scottplot.winforms.4.1.45.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\system.drawing.common\\4.6.1\\system.drawing.common.4.6.1.nupkg.sha512",
-    "C:\\Users\\devme\\.nuget\\packages\\winformanimation-net5\\2.0.0\\winformanimation-net5.2.0.0.nupkg.sha512"
+    "C:\\Users\\doguk\\.nuget\\packages\\circularprogressbar\\2.8.0.16\\circularprogressbar.2.8.0.16.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CircularProgressBar 2.8.0.16' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CircularProgressBar",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
